@@ -1,0 +1,20 @@
+[gd_scene load_steps=6 format=3 uid="uid://bwao34vl4ggx0"]
+
+[ext_resource type="Script" path="res://scripts/rotating_cylinder.gd" id="1_0x385"]
+[ext_resource type="Texture2D" uid="uid://c71w1yyj78sa3" path="res://models/props/coin-gold.png" id="1_x5pq8"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_01k4f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ono68"]
+albedo_texture = ExtResource("1_x5pq8")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ehx80"]
+
+[node name="RotatingCylinder" type="MeshInstance3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+mesh = SubResource("CylinderMesh_01k4f")
+surface_material_override/0 = SubResource("StandardMaterial3D_ono68")
+script = ExtResource("1_0x385")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_ehx80")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://c4k0df84w04v1"]
+[gd_scene load_steps=33 format=3 uid="uid://c4k0df84w04v1"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_m3hbj"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_oq2nj"]
@@ -25,6 +25,8 @@
 [ext_resource type="Theme" uid="uid://d3avl0mr4r87l" path="res://themes/default_theme.tres" id="23_0rhxw"]
 [ext_resource type="Texture2D" uid="uid://dm50aa4qogm65" path="res://sprites/button_rectangle_depth_gloss.png" id="24_teaou"]
 [ext_resource type="PackedScene" uid="uid://dbr3dh46cbskt" path="res://objects/wall.tscn" id="25_gg1wa"]
+[ext_resource type="PackedScene" uid="uid://br12eu3pdrxth" path="res://scenes/rotating_cylinder_2.tscn" id="27_2by42"]
+[ext_resource type="PackedScene" uid="uid://f4whuhhowomq" path="res://scenes/glide_pickup.tscn" id="27_68g6v"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u8ojw"]
 auto_exposure_scale = 0.75
@@ -313,6 +315,15 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -30.5423, 2.65714, 0.622322)
 
 [node name="wall2" parent="." instance=ExtResource("25_gg1wa")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -30.5423, 2.65714, -3.41335)
+
+[node name="RotatingCylinder2" parent="." instance=ExtResource("27_2by42")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.18, 0, 0)
+
+[node name="RotatingCylinder3" parent="." instance=ExtResource("27_2by42")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 1.0843, 0, -0.486726)
+
+[node name="GlidePickup" parent="." instance=ExtResource("27_68g6v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.02295, 2.45255, 4.19376)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]

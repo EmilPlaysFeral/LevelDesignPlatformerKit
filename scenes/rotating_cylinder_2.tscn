@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://br12eu3pdrxth"]
+
+[ext_resource type="Texture2D" uid="uid://da6wo6orjt6d6" path="res://models/prototyping/models/coin.png" id="1_4qkyu"]
+[ext_resource type="Script" path="res://scripts/rotating_cylinder_2.gd" id="1_bllhk"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_8fxer"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_75ygh"]
+albedo_texture = ExtResource("1_4qkyu")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_cdx8r"]
+
+[node name="RotatingCylinder2" type="StaticBody3D"]
+script = ExtResource("1_bllhk")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+mesh = SubResource("CylinderMesh_8fxer")
+surface_material_override/0 = SubResource("StandardMaterial3D_75ygh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+shape = SubResource("CylinderShape3D_cdx8r")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
