@@ -310,6 +310,13 @@ label_settings = SubResource("LabelSettings_v6r7m")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="GlideProgressBar" type="ProgressBar" parent="HUD"]
+offset_left = 78.0
+offset_top = 488.0
+offset_right = 192.0
+offset_bottom = 580.0
+max_value = 15.0
+
 [node name="wall" parent="." instance=ExtResource("25_gg1wa")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -30.5423, 2.65714, 0.622322)
 

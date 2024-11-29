@@ -34,6 +34,8 @@ var latest_checkpoint: Vector3
 @onready var sound_footsteps = $SoundFootsteps
 @onready var model = $Character
 @onready var animation = $Character/AnimationPlayer
+@onready var glide_progress_bar: ProgressBar = $"../HUD/GlideProgressBar"
+
 
 func _ready() -> void:
 	latest_checkpoint = global_position
@@ -44,6 +46,13 @@ func _physics_process(delta):
 		glide_timer_remaining -= delta
 		if glide_timer_remaining <= 0:
 			disable_glide_powerup()
+
+	# Update progress bar
+	if glide_timer_active:
+		glide_progress_bar.visible = true
+		glide_progress_bar.value = glide_timer_remaining  # Update progress bar value
+	else:
+		glide_progress_bar.visible = false
 
 	# Handle functions
 	handle_controls(delta)
