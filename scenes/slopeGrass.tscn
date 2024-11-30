@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://fceq1wrcumxa"]
+
+[ext_resource type="PackedScene" uid="uid://cqxb34rley0yv" path="res://models/props/block-grass-large-slope-steep.glb" id="1_3j5wa"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qfjdk"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(2, 0, 0, 0, 1, 1.73205, 0, -1.73205, 1, 0, -0.225857, -0.368661)
+shape = SubResource("BoxShape3D_qfjdk")
+
+[node name="block-grass-large-slope-steep2" parent="StaticBody3D" instance=ExtResource("1_3j5wa")]
