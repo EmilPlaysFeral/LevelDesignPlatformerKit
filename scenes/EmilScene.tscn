@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://c4k0df84w04v1"]
+[gd_scene load_steps=42 format=3 uid="uid://c4k0df84w04v1"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_m3hbj"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_oq2nj"]
@@ -27,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://dm50aa4qogm65" path="res://sprites/button_rectangle_depth_gloss.png" id="24_teaou"]
 [ext_resource type="PackedScene" uid="uid://dbr3dh46cbskt" path="res://objects/wall.tscn" id="25_gg1wa"]
 [ext_resource type="PackedScene" uid="uid://f4whuhhowomq" path="res://scenes/glide_pickup.tscn" id="27_68g6v"]
+[ext_resource type="PackedScene" uid="uid://2mug4sfl3sq1" path="res://featherText.tscn" id="28_id6uw"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u8ojw"]
 auto_exposure_scale = 0.75
@@ -4137,6 +4138,9 @@ offset_top = 488.0
 offset_right = 192.0
 offset_bottom = 580.0
 max_value = 15.0
+
+[node name="Node3D" parent="." instance=ExtResource("28_id6uw")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -76.4752, 23.7232, -70.9217)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]

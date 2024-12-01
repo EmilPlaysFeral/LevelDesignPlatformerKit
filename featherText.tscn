@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://2mug4sfl3sq1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yd8n4"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_tm7ly"]
+material = SubResource("StandardMaterial3D_yd8n4")
+text = "This is a Feather pickup
+with it you can glide through
+the air by holding spacebar"
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("TextMesh_tm7ly")
