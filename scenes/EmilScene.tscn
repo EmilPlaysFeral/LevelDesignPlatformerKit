@@ -156,6 +156,10 @@ visible = false
 transform = Transform3D(98.4, 0, 0, 0, 3, 0, 0, 0, 181.5, -112.503, 14.7152, -103.916)
 visible = false
 
+[node name="trap-spikes94" parent="World" instance=ExtResource("8_lcod5")]
+transform = Transform3D(98.4, 0, 0, 0, 3, 0, 0, 0, 181.5, -103.911, 13.6511, -103.916)
+visible = false
+
 [node name="trap-spikes91" parent="World" instance=ExtResource("8_lcod5")]
 transform = Transform3D(98.4, 0, 0, 0, 3, 0, 0, 0, 181.5, -154.503, 8.71517, 95.0845)
 visible = false
@@ -1427,7 +1431,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -152.397, 29.5, -96.4489)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -147.937, 29.5, -60.9601)
 
 [node name="checkpoint9" parent="World/Checkpoints" instance=ExtResource("12_dc7kb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -149.937, 36.2026, -7.96015)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -149.937, 36.2026, -9.33376)
 
 [node name="Doors" type="Node" parent="World"]
 
@@ -3710,7 +3714,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -155.5, 30.5, -93)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -160.5, 39, -32)
 
 [node name="GlidePickup5" parent="World/FeatherPickup" instance=ExtResource("27_68g6v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -149.735, 37.1477, -8.59541)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -149.735, 37.1477, -7.59541)
 
 [node name="GlidePickup6" parent="World/FeatherPickup" instance=ExtResource("27_68g6v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -149.509, 30.9331, 29.4787)
