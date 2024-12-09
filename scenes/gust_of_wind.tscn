@@ -1,8 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8h2od1x71msx"]
+[gd_scene load_steps=7 format=3 uid="uid://c8h2od1x71msx"]
 
 [ext_resource type="Script" path="res://scripts/gust_of_wind.gd" id="1_d15na"]
+[ext_resource type="Shader" path="res://shaders/gust_of_wind.gdshader" id="2_7t4px"]
+[ext_resource type="Script" path="res://scripts/mesh_instance_3d.gd" id="3_f3u2f"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_45s67"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r6je5"]
+render_priority = 0
+shader = ExtResource("2_7t4px")
+shader_parameter/wind_color = Vector4(0.6, 0.8, 1, 0.5)
+shader_parameter/wind_strength = 0.5
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ci3tb"]
 
 [node name="GustOfWind" type="Area3D"]
 script = ExtResource("1_d15na")
@@ -10,6 +20,12 @@ script = ExtResource("1_d15na")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 shape = SubResource("CylinderShape3D_45s67")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+material_override = SubResource("ShaderMaterial_r6je5")
+mesh = SubResource("CylinderMesh_ci3tb")
+script = ExtResource("3_f3u2f")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
