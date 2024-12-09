@@ -12,6 +12,7 @@ signal reached_goal
 @export var glide_strength = 0.7  # The reduced gravity during glide
 @export var glide_delay = 0.2  # Delay before gliding can start after jumping (in seconds)
 @export var glide_powerup_duration = 15.0  # Duration in seconds for the glide ability
+@export var gust_force = 5.0  # Upward force applied by the gust. maybe set to around 5-10 for balancE
 
 var movement_velocity: Vector3
 var rotation_direction: float
@@ -21,6 +22,7 @@ var has_glide = false  # Flag to check if the player can glide
 var glide_timer_active = false  # Whether the powerup timer is running
 var glide_timer_remaining = 0.0  # Time left on the glide timer
 var glide_timer = 0.0  # Timer for glide delay
+var gust_force_active = false  # Tracks if the gust is pushing the player
 
 var previously_floored = false
 
@@ -35,7 +37,6 @@ var latest_checkpoint: Vector3
 @onready var model = $Character
 @onready var animation = $Character/AnimationPlayer
 @onready var glide_progress_bar: ProgressBar = $"../HUD/GlideProgressBar"
-
 
 func _ready() -> void:
 	latest_checkpoint = global_position
@@ -62,9 +63,12 @@ func _physics_process(delta):
 	# Movement
 	var applied_velocity: Vector3
 
-	if gliding:
-		gravity = gravity * glide_strength  # Apply reduced gravity while gliding
-		movement_velocity.y = 0  # Prevent vertical velocity changes during glide
+	if gliding or gust_force_active:
+		if gust_force_active:
+			movement_velocity.y = gust_force  # Direct upward push from gust
+		else:
+			gravity = gravity * glide_strength  # Apply reduced gravity while gliding
+			movement_velocity.y = 0  # Prevent vertical velocity changes during glide
 	else:
 		movement_velocity.y = gravity
 
@@ -148,7 +152,12 @@ func handle_controls(delta):
 
 # Handle gravity
 func handle_gravity(delta):
-	gravity += 25 * delta
+	if gust_force_active:
+		gravity -= gust_force * delta  # Apply an upward force smoothly
+		gravity = clamp(gravity, -gust_force, 25)  # Limit upward force
+	else:
+		gravity += 25 * delta  # Regular gravity increase
+
 	if gravity > 0 and is_on_floor():
 		jump_single = true
 		gravity = 0
@@ -192,6 +201,10 @@ func disable_glide_powerup():
 	glide_timer_remaining = 0.0
 	exit_glide()  # Ensure gliding is stopped
 	Audio.play("res://sounds/powerup_end.ogg")  # Optional sound for powerup end
+
+# Gust force management
+func apply_gust_force(active: bool) -> void:
+	gust_force_active = active
 
 # Collecting coins
 func collect_coin():

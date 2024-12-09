@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8h2od1x71msx"]
+
+[ext_resource type="Script" path="res://scripts/gust_of_wind.gd" id="1_d15na"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_45s67"]
+
+[node name="GustOfWind" type="Area3D"]
+script = ExtResource("1_d15na")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+shape = SubResource("CylinderShape3D_45s67")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
