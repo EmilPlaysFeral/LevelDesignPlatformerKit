@@ -669,12 +669,6 @@ transform = Transform3D(-2.98023e-08, 0, -1, 0, 1, 0, 1, 0, -2.98023e-08, -152.5
 
 [node name="SmallPlatforms" type="Node" parent="World"]
 
-[node name="platform32" parent="World/SmallPlatforms" instance=ExtResource("9_vw5aa")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 20, -113)
-
-[node name="platform33" parent="World/SmallPlatforms" instance=ExtResource("9_vw5aa")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92, 21, -117)
-
 [node name="platform35" parent="World/SmallPlatforms" instance=ExtResource("9_vw5aa")]
 transform = Transform3D(0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -139, 21, -116)
 
@@ -698,9 +692,6 @@ transform = Transform3D(-5.96046e-08, 0, -1, 0, 1, 0, 1, 0, -5.96046e-08, -147, 
 
 [node name="platform47" parent="World/SmallPlatforms" instance=ExtResource("9_vw5aa")]
 transform = Transform3D(-5.96046e-08, 0, -1, 0, 1, 0, 1, 0, -5.96046e-08, -143, 29, -61)
-
-[node name="platform34" parent="World/SmallPlatforms" instance=ExtResource("9_vw5aa")]
-transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -95, 22, -114)
 
 [node name="platform12" parent="World/SmallPlatforms" instance=ExtResource("9_vw5aa")]
 transform = Transform3D(0.866026, -0.5, 1.49012e-08, -0.5, -0.866025, 4.47035e-08, 0, -2.98023e-08, -1, -55.9427, 5.4309, -10.5)
@@ -1777,7 +1768,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.259, 10.2274, -22.9356)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.259, 10.2274, -56.9356)
 
 [node name="checkpoint5" parent="World/Checkpoints" instance=ExtResource("13_ashis")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.259, 20.5, -75.405)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.259, 20.5, -76.405)
+
+[node name="checkpoint11" parent="World/Checkpoints" instance=ExtResource("13_ashis")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -87.259, 19.1454, -88.405)
 
 [node name="checkpoint6" parent="World/Checkpoints" instance=ExtResource("13_ashis")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -101.259, 23.5, -114.06)
@@ -2314,7 +2308,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -125.424, 21.2603, -114.129)
 [node name="FeatherPickup" type="Node" parent="World"]
 
 [node name="GlidePickup" parent="World/FeatherPickup" instance=ExtResource("21_8b27i")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -29.5268, 21.1629, -75.9484)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -29.5268, 21.1629, -76.5)
 
 [node name="GlidePickup2" parent="World/FeatherPickup" instance=ExtResource("21_8b27i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -107.5, 24.5, -114)
@@ -2364,7 +2358,202 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -141.509, 21.9156, 93.9921)
 [node name="Spikes" type="Node" parent="World"]
 
 [node name="trap-spikes90" parent="World/Spikes" instance=ExtResource("6_yen03")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -25.5035, 12.7152, -76.9155)
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -33.504, 12, -81.915)
+
+[node name="trap-spikes91" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -33.504, 12, -78.915)
+
+[node name="trap-spikes92" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -33.504, 12, -75.915)
+
+[node name="trap-spikes93" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -33.504, 12, -72.915)
+
+[node name="trap-spikes94" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -36.504, 12, -81.915)
+
+[node name="trap-spikes95" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -36.504, 12, -78.915)
+
+[node name="trap-spikes96" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -36.504, 12, -75.915)
+
+[node name="trap-spikes97" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -36.504, 12, -72.915)
+
+[node name="trap-spikes98" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -39.504, 12, -81.915)
+
+[node name="trap-spikes99" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -39.504, 12, -78.915)
+
+[node name="trap-spikes100" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -39.504, 12, -75.915)
+
+[node name="trap-spikes101" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -39.504, 12, -72.915)
+
+[node name="trap-spikes102" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -42.504, 12, -81.915)
+
+[node name="trap-spikes103" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -42.1, 12, -78.915)
+
+[node name="trap-spikes104" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -42.1, 12, -75.915)
+
+[node name="trap-spikes105" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -42.504, 12, -72.915)
+
+[node name="trap-spikes106" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -45.504, 12, -82.915)
+
+[node name="trap-spikes109" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -45.504, 12, -71.915)
+
+[node name="trap-spikes110" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -48.504, 12, -81.915)
+
+[node name="trap-spikes111" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -48.504, 12, -78.915)
+
+[node name="trap-spikes112" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -48.504, 12, -75.915)
+
+[node name="trap-spikes113" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -48.504, 12, -72.915)
+
+[node name="trap-spikes114" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -51.504, 12, -81.915)
+
+[node name="trap-spikes115" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -51.504, 12, -78.915)
+
+[node name="trap-spikes116" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -51.504, 12, -75.915)
+
+[node name="trap-spikes117" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -51.504, 12, -72.915)
+
+[node name="trap-spikes118" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -54.504, 12, -81.915)
+
+[node name="trap-spikes119" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -54.504, 12, -78.915)
+
+[node name="trap-spikes120" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -54.504, 12, -75.915)
+
+[node name="trap-spikes121" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -54.504, 12, -72.915)
+
+[node name="trap-spikes122" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -57.504, 12, -81.915)
+
+[node name="trap-spikes123" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -57.504, 12, -78.915)
+
+[node name="trap-spikes124" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -57.504, 12, -75.915)
+
+[node name="trap-spikes125" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -57.504, 12, -72.915)
+
+[node name="trap-spikes126" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -60.504, 12, -81.915)
+
+[node name="trap-spikes127" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -60.504, 12, -78.915)
+
+[node name="trap-spikes128" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -60.504, 12, -75.915)
+
+[node name="trap-spikes129" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -60.504, 12, -72.915)
+
+[node name="trap-spikes130" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -63.504, 12, -81.915)
+
+[node name="trap-spikes131" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -63.504, 12, -78.915)
+
+[node name="trap-spikes132" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -63.504, 12, -75.915)
+
+[node name="trap-spikes133" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -63.504, 12, -72.915)
+
+[node name="trap-spikes134" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -66.504, 12, -81.915)
+
+[node name="trap-spikes135" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -66.504, 12, -78.915)
+
+[node name="trap-spikes136" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -66.504, 12, -75.915)
+
+[node name="trap-spikes137" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -66.504, 12, -72.915)
+
+[node name="trap-spikes138" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -69.504, 12, -81.915)
+
+[node name="trap-spikes139" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -69.504, 12, -78.915)
+
+[node name="trap-spikes140" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -69.504, 12, -75.915)
+
+[node name="trap-spikes141" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -69.504, 12, -72.915)
+
+[node name="trap-spikes142" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -72.504, 12, -81.915)
+
+[node name="trap-spikes143" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -72.504, 12, -78.915)
+
+[node name="trap-spikes144" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -72.504, 12, -75.915)
+
+[node name="trap-spikes145" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -72.504, 12, -72.915)
+
+[node name="trap-spikes146" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -75.504, 12, -81.915)
+
+[node name="trap-spikes147" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -75.504, 12, -78.915)
+
+[node name="trap-spikes148" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -75.504, 12, -75.915)
+
+[node name="trap-spikes149" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -75.504, 12, -72.915)
+
+[node name="trap-spikes150" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -78.504, 12, -81.915)
+
+[node name="trap-spikes151" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -78.504, 12, -78.915)
+
+[node name="trap-spikes152" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -78.504, 12, -75.915)
+
+[node name="trap-spikes153" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -78.504, 12, -72.915)
+
+[node name="trap-spikes154" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -81.504, 12, -81.915)
+
+[node name="trap-spikes155" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -81.504, 12, -78.915)
+
+[node name="trap-spikes156" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -81.504, 12, -75.915)
+
+[node name="trap-spikes157" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -81.504, 12, -72.915)
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.422618, -0.694272, 0.582563, 0, 0.642788, 0.766044, -0.906308, 0.323744, -0.271654, 0, 0, 0)
@@ -2490,7 +2679,7 @@ offset_bottom = 580.0
 max_value = 15.0
 
 [node name="Node3D" parent="." instance=ExtResource("28_yr346")]
-transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, -29.4485, 23.3861, -75.9733)
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, -29.448, 23, -76.5)
 
 [node name="EnvoArt" type="Node" parent="."]
 
@@ -3096,16 +3285,97 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -45.254, 15.196, -75.296)
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -45.254, 15.196, -79.296)
 
 [node name="grassblock194" parent="Grassblocks" instance=ExtResource("32_77u1k")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -59.254, 15.196, -79.296)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -59.0318, 15.196, -79.296)
 
 [node name="grassblock195" parent="Grassblocks" instance=ExtResource("32_77u1k")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -59.254, 11.196, -79.296)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -59.0318, 11.196, -79.296)
 
 [node name="grassblock196" parent="Grassblocks" instance=ExtResource("32_77u1k")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -73.254, 15.196, -75.296)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -73.0318, 15.196, -75.296)
+
+[node name="grassblock200" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -85.254, 15.196, -75.296)
+
+[node name="grassblock201" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -85.254, 15.196, -79.296)
+
+[node name="grassblock202" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -85.254, 11.196, -75.296)
+
+[node name="grassblock203" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -85.254, 11.196, -79.296)
+
+[node name="grassblock204" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -85.254, 15.196, -83.296)
+
+[node name="grassblock205" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -85.254, 11.196, -83.296)
+
+[node name="grassblock207" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -85.254, 15.196, -71.296)
+
+[node name="grassblock208" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -85.254, 11.196, -71.296)
+
+[node name="grassblock209" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -88.254, 15.196, -75.296)
+
+[node name="grassblock210" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -88.254, 11.196, -75.296)
+
+[node name="grassblock211" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -88.254, 15.196, -79.296)
+
+[node name="grassblock212" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -88.254, 11.196, -79.296)
+
+[node name="grassblock213" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -88.254, 15.196, -83.296)
+
+[node name="grassblock214" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -88.254, 11.196, -83.296)
+
+[node name="grassblock215" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -88.254, 15.196, -87.296)
+
+[node name="grassblock216" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -88.254, 11.196, -87.296)
+
+[node name="grassblock217" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -85.254, 15.196, -87.296)
+
+[node name="grassblock218" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -85.254, 11.196, -87.296)
+
+[node name="grassblock219" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -85.254, 15.196, -90.296)
+
+[node name="grassblock226" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -91.254, 15.196, -112.356)
+
+[node name="grassblock227" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -87.254, 15.196, -112.356)
+
+[node name="grassblock223" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, -91.254, 17.196, -96.9569)
+
+[node name="grassblock224" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -86.3353, 17.196, -100.59)
+
+[node name="grassblock225" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(0.866026, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866026, -90.7432, 17.196, -105.158)
+
+[node name="grassblock220" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -85.254, 11.196, -90.296)
+
+[node name="grassblock221" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -88.254, 15.196, -90.296)
+
+[node name="grassblock222" parent="Grassblocks" instance=ExtResource("32_77u1k")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -88.254, 11.196, -90.296)
 
 [node name="grassblock197" parent="Grassblocks" instance=ExtResource("32_77u1k")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -73.254, 11.196, -75.296)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -73.0318, 11.196, -75.296)
 
 [node name="grassblock167" parent="Grassblocks" instance=ExtResource("32_77u1k")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -45.254, 11.196, -75.296)
@@ -3403,6 +3673,60 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -68.254, 12.196, -68.296)
 [node name="grassblock79" parent="." instance=ExtResource("34_dpn0h")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -72.254, 12.196, -68.296)
 
+[node name="grassblock178" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -73.254, 20.196, -86.296)
+
+[node name="grassblock179" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -73.254, 16.196, -86.296)
+
+[node name="grassblock180" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -73.254, 12.196, -86.296)
+
+[node name="grassblock181" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -76.254, 20.196, -68.296)
+
+[node name="grassblock182" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -76.254, 16.196, -68.296)
+
+[node name="grassblock183" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -76.254, 12.196, -68.296)
+
+[node name="grassblock184" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -77.254, 20.196, -86.296)
+
+[node name="grassblock185" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -77.254, 16.196, -86.296)
+
+[node name="grassblock186" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -77.254, 12.196, -86.296)
+
+[node name="grassblock190" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -81.254, 20.196, -86.296)
+
+[node name="grassblock191" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -81.254, 16.196, -86.296)
+
+[node name="grassblock192" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -81.254, 12.196, -86.296)
+
+[node name="grassblock187" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -80.254, 20.196, -68.296)
+
+[node name="grassblock188" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -80.254, 16.196, -68.296)
+
+[node name="grassblock189" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -80.254, 12.196, -68.296)
+
+[node name="grassblock193" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -84.254, 20.196, -68.296)
+
+[node name="grassblock194" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -84.254, 16.196, -68.296)
+
+[node name="grassblock195" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -84.254, 12.196, -68.296)
+
 [node name="grassblock5" parent="." instance=ExtResource("34_dpn0h")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.254, 16.196, -71.296)
 
@@ -3609,6 +3933,54 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -71.254, 8.196, -75.296)
 
 [node name="grassblock156" parent="." instance=ExtResource("34_dpn0h")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -71.254, 8.196, -71.296)
+
+[node name="grassblock162" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -74.254, 8.196, -79.296)
+
+[node name="grassblock163" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -74.254, 8.196, -83.296)
+
+[node name="grassblock164" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -74.254, 8.196, -75.296)
+
+[node name="grassblock165" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -74.254, 8.196, -71.296)
+
+[node name="grassblock166" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -77.254, 8.196, -79.296)
+
+[node name="grassblock167" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -77.254, 8.196, -83.296)
+
+[node name="grassblock168" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -77.254, 8.196, -75.296)
+
+[node name="grassblock169" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -77.254, 8.196, -71.296)
+
+[node name="grassblock170" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -80.254, 8.196, -79.296)
+
+[node name="grassblock171" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -80.254, 8.196, -83.296)
+
+[node name="grassblock172" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -80.254, 8.196, -75.296)
+
+[node name="grassblock173" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -80.254, 8.196, -71.296)
+
+[node name="grassblock174" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -83.254, 8.196, -79.296)
+
+[node name="grassblock175" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -83.254, 8.196, -83.296)
+
+[node name="grassblock176" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -83.254, 8.196, -75.296)
+
+[node name="grassblock177" parent="." instance=ExtResource("34_dpn0h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -83.254, 8.196, -71.296)
 
 [node name="grassblock9" parent="." instance=ExtResource("34_dpn0h")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -26.254, 16.196, -79.296)
