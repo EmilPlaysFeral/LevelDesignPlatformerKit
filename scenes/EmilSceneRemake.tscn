@@ -58,16 +58,16 @@ _data = {
 }
 point_count = 2
 
-[sub_resource type="Curve3D" id="Curve3D_8wcac"]
+[sub_resource type="Curve3D" id="Curve3D_uvfn5"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -158, 29, -44, 0, 0, 0, 0, 0, 0, -150, 29, -44),
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -121.488, 21, -136.793, 0, 0, 0, 0, 0, 0, -121.488, 21, -144.793),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
 
-[sub_resource type="Curve3D" id="Curve3D_flkce"]
+[sub_resource type="Curve3D" id="Curve3D_pbpi1"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -161, 37.5, -35, 0, 0, 0, 0, 0, 0, -161, 29.5, -35),
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -130.488, 21.5, -147.793, 0, 0, 0, 0, 0, 0, -130.488, 29.5, -147.793),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
@@ -727,7 +727,7 @@ transform = Transform3D(3.78552e-08, -6.95453e-09, 1, -0.5, -0.866025, 4.72602e-
 [node name="LargePlatforms" type="Node" parent="World"]
 
 [node name="platform-large47" parent="World/LargePlatforms" instance=ExtResource("10_82idt")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -136.488, 23, -126.439)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -136.488, 22, -126.439)
 
 [node name="platform-large58" parent="World/LargePlatforms" instance=ExtResource("10_82idt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 35.8, -14)
@@ -1707,7 +1707,7 @@ transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, 
 look_at_door_when_opens = true
 
 [node name="door4" parent="World/Doors" instance=ExtResource("14_b74fa")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -148.088, 28.3, -137.016)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -142.088, 29.3, -137.016)
 look_at_door_when_opens = true
 
 [node name="door5" parent="World/Doors" instance=ExtResource("14_b74fa")]
@@ -1733,7 +1733,7 @@ transform = Transform3D(0.00434582, 0, -0.999991, 0, 1, 0, 0.999991, 0, 0.004345
 target = NodePath("../../MovingObjects/moving_object_path4")
 
 [node name="button8" parent="World/Buttons" node_paths=PackedStringArray("target") instance=ExtResource("15_xnb6f")]
-transform = Transform3D(0.00434582, 0, -0.999991, 0, 1, 0, 0.999991, 0, 0.00434582, -136.537, 23.5, -127.802)
+transform = Transform3D(0.00434582, 0, -0.999991, 0, 1, 0, 0.999991, 0, 0.00434582, -136.537, 22.5, -127.802)
 target = NodePath("../../MovingObjects/moving_object_path5")
 
 [node name="button9" parent="World/Buttons" node_paths=PackedStringArray("target") instance=ExtResource("15_xnb6f")]
@@ -1803,14 +1803,21 @@ is_on_from_start = false
 ping_pong = true
 
 [node name="moving_object_path5" parent="World/MovingObjects" node_paths=PackedStringArray("object_to_move") instance=ExtResource("17_i2il3")]
-curve = SubResource("Curve3D_8wcac")
+curve = SubResource("Curve3D_uvfn5")
 object_to_move = NodePath("../platform-moving5")
 movement_speed = 2.0
 is_on_from_start = false
 ping_pong = true
 
 [node name="moving_object_path6" parent="World/MovingObjects" node_paths=PackedStringArray("object_to_move") instance=ExtResource("17_i2il3")]
-curve = SubResource("Curve3D_flkce")
+curve = SubResource("Curve3D_pbpi1")
+object_to_move = NodePath("../platform-moving6")
+movement_speed = 2.0
+is_on_from_start = false
+ping_pong = true
+
+[node name="moving_object_path11" parent="World/MovingObjects" node_paths=PackedStringArray("object_to_move") instance=ExtResource("17_i2il3")]
+curve = SubResource("Curve3D_pbpi1")
 object_to_move = NodePath("../platform-moving6")
 movement_speed = 2.0
 is_on_from_start = false
@@ -1841,7 +1848,7 @@ ping_pong = true
 [node name="Walls" type="Node" parent="World"]
 
 [node name="wall504" parent="World/Walls" instance=ExtResource("18_qw5bh")]
-transform = Transform3D(2, 0, -8.74228e-08, 0, 2, 0, 8.74228e-08, 0, 2, -147.988, 28.3, -138.993)
+transform = Transform3D(2, 0, -8.74228e-08, 0, 2, 0, 8.74228e-08, 0, 2, -141.988, 29.3, -138.993)
 
 [node name="wall583" parent="World/Walls" instance=ExtResource("18_qw5bh")]
 transform = Transform3D(0, 0, 2, 0, 2, 0, -2, 0, 0, -150.201, 15.3, 150.531)
@@ -1859,7 +1866,7 @@ transform = Transform3D(0, -2.38419e-07, -2, 0, -2, 2.38419e-07, -2, 0, 0, -150.
 transform = Transform3D(0, 4.13264e-07, 2, 0, 2, -4.13264e-07, -2, 0, 0, -150.201, 23.3, 150.531)
 
 [node name="wall523" parent="World/Walls" instance=ExtResource("18_qw5bh")]
-transform = Transform3D(2, 0, -8.74228e-08, 0, 2, 0, 8.74228e-08, 0, 2, -147.988, 28.3, -134.993)
+transform = Transform3D(2, 0, -8.74228e-08, 0, 2, 0, 8.74228e-08, 0, 2, -141.988, 29.3, -134.993)
 
 [node name="wall581" parent="World/Walls" instance=ExtResource("18_qw5bh")]
 transform = Transform3D(-1.20075e-07, 0, -21, 0, 12.4988, 0, 2.747, 0, -9.17939e-07, -161.675, 13.3217, 150.601)
@@ -1870,10 +1877,10 @@ transform = Transform3D(-1.20075e-07, 0, -21, 0, 12.4988, 0, 2.747, 0, -9.17939e
 [node name="FallingPlatforms" type="Node" parent="World"]
 
 [node name="platform-falling" parent="World/FallingPlatforms" instance=ExtResource("19_8lraf")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -131.488, 23, -126.793)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -131.488, 22, -126.793)
 
 [node name="platform-falling2" parent="World/FallingPlatforms" instance=ExtResource("19_8lraf")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -129.488, 23, -129.793)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -129.488, 22, -129.793)
 
 [node name="platform-falling4" parent="World/FallingPlatforms" instance=ExtResource("19_8lraf")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -124.488, 21, -151.793)
@@ -1882,7 +1889,7 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -124.4
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -124.488, 21, -154.793)
 
 [node name="platform-falling3" parent="World/FallingPlatforms" instance=ExtResource("19_8lraf")]
-transform = Transform3D(0.5, 0, -0.866026, 0, 1, 0, 0.866026, 0, 0.5, -121.488, 23, -130.793)
+transform = Transform3D(0.5, 0, -0.866026, 0, 1, 0, 0.866026, 0, 0.5, -124.488, 22, -129.793)
 
 [node name="platform-falling6" parent="World/FallingPlatforms" instance=ExtResource("19_8lraf")]
 transform = Transform3D(1, 0, -2.98023e-07, 0, 1, 0, 2.98023e-07, 0, 1, -57, 15, -122)
