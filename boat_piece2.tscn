@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://ok6qn1loq01f"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_h7f6j"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hx7qf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qs2kb"]
+
+[node name="BoatPiece" type="StaticBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_h7f6j")
+surface_material_override/0 = SubResource("StandardMaterial3D_hx7qf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_qs2kb")
