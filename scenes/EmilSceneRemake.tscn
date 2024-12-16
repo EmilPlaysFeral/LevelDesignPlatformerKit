@@ -87,16 +87,16 @@ _data = {
 }
 point_count = 2
 
-[sub_resource type="Curve3D" id="Curve3D_qbiej"]
+[sub_resource type="Curve3D" id="Curve3D_6ygit"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -144.5, 21, 126.5, 0, 0, 0, 0, 0, 0, -144.5, 12, 126.5),
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -195.5, 28, -13.5, 0, 0, 0, 0, 0, 0, -195.5, 36, -13.5),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
 
-[sub_resource type="Curve3D" id="Curve3D_a4uht"]
+[sub_resource type="Curve3D" id="Curve3D_6tdtf"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -154.5, 12, 126.5, 0, 0, 0, 0, 0, 0, -154.5, 21, 126.5),
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -194.5, 33, 0.5, 0, 0, 0, 0, 0, 0, -194.5, 25, 0.5),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
@@ -1784,7 +1784,16 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -121.4
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -130.488, 29.5, -147.793)
 
 [node name="platform-moving7" parent="World/MovingObjects" instance=ExtResource("16_j4wpn")]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -203.5, 46, 2.5)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -195.5, 32, -13.5)
+
+[node name="movementSpike" parent="World/MovingObjects/platform-moving7" instance=ExtResource("6_yen03")]
+transform = Transform3D(-1.09278e-07, -9.93741e-09, -2.5, -2.18557e-07, 2.5, -9.93739e-09, 2.5, 2.18557e-07, -1.09278e-07, 0, 0.5, 0)
+
+[node name="platform-moving13" parent="World/MovingObjects" instance=ExtResource("16_j4wpn")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -194.5, 29, 0.5)
+
+[node name="movementSpike" parent="World/MovingObjects/platform-moving13" instance=ExtResource("6_yen03")]
+transform = Transform3D(-1.09278e-07, -9.93741e-09, -2.5, -2.18557e-07, 2.5, -9.93739e-09, 2.5, 2.18557e-07, -1.09278e-07, 0, 0.5, 0)
 
 [node name="platform-moving8" parent="World/MovingObjects" instance=ExtResource("16_j4wpn")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -190.5, 21, -62.5)
@@ -1858,14 +1867,14 @@ movement_speed = 2.0
 ping_pong = true
 
 [node name="moving_object_path9" parent="World/MovingObjects" node_paths=PackedStringArray("object_to_move") instance=ExtResource("17_i2il3")]
-curve = SubResource("Curve3D_qbiej")
-object_to_move = NodePath("../platform-moving10")
+curve = SubResource("Curve3D_6ygit")
+object_to_move = NodePath("../platform-moving7")
 movement_speed = 2.0
 ping_pong = true
 
 [node name="moving_object_path10" parent="World/MovingObjects" node_paths=PackedStringArray("object_to_move") instance=ExtResource("17_i2il3")]
-curve = SubResource("Curve3D_a4uht")
-object_to_move = NodePath("../platform-moving9")
+curve = SubResource("Curve3D_6tdtf")
+object_to_move = NodePath("../platform-moving13")
 movement_speed = 2.0
 ping_pong = true
 
@@ -2250,6 +2259,33 @@ transform = Transform3D(1.31134e-07, -3, -3.57628e-07, -3, -1.31134e-07, 4.61511
 
 [node name="trap-spikes162" parent="World/Spikes" instance=ExtResource("6_yen03")]
 transform = Transform3D(3, 2.62268e-07, 1.10173e-14, 2.62268e-07, -3, -3.57628e-07, -1.77636e-14, 3.57628e-07, -3, -190.5, 21.5, -29.915)
+
+[node name="trap-spikes163" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(3, 2.62268e-07, 2.7518e-14, 2.62268e-07, -3, -4.17233e-07, 7.10543e-15, 4.17233e-07, -3, -195.5, 46.5, -93.915)
+
+[node name="trap-spikes164" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(1.31134e-07, -3, -5.96046e-07, 3, 1.31134e-07, 1.10535e-14, 1.42109e-14, -5.96046e-07, 3, -194, 41, -76.915)
+
+[node name="trap-spikes165" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(-1.31134e-07, 3, 1.19209e-07, 3, 1.31134e-07, 2.93254e-15, -1.42109e-14, 1.19209e-07, -3, -197, 41, -76.915)
+
+[node name="trap-spikes166" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(-1.31134e-07, 3, 1.19209e-07, 3, 1.31134e-07, 2.93254e-15, -1.42109e-14, 1.19209e-07, -3, -193, 36, -31.915)
+
+[node name="trap-spikes167" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(1.31134e-07, -3, -4.76837e-07, 3, 1.31134e-07, 1.11942e-14, 3.19744e-14, -4.76837e-07, 3, -190, 36, -31.915)
+
+[node name="trap-spikes170" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(-3, -2.01948e-28, 9.64906e-15, -8.52651e-14, -3, -4.76837e-07, 3.19744e-14, -4.76837e-07, 3, -199.5, 37.5, -31.915)
+
+[node name="trap-spikes171" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(3, -4.76837e-07, -9.38565e-14, -3.57628e-07, -3, -2.98023e-07, -2.84217e-14, 2.98023e-07, -3, -191.5, 37.5, -31.915)
+
+[node name="trap-spikes168" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(-1.31134e-07, 3, 1.19209e-07, 3, 1.31134e-07, 2.93254e-15, -1.42109e-14, 1.19209e-07, -3, -201, 36, -31.915)
+
+[node name="trap-spikes169" parent="World/Spikes" instance=ExtResource("6_yen03")]
+transform = Transform3D(1.31134e-07, -3, -4.76837e-07, 3, 1.31134e-07, 1.11942e-14, 3.19744e-14, -4.76837e-07, 3, -198, 36, -31.915)
 
 [node name="trap-spikes161" parent="World/Spikes" instance=ExtResource("6_yen03")]
 transform = Transform3D(-1.31134e-07, 3, -1.19209e-07, -3, -1.31134e-07, 4.61511e-15, 3.55271e-15, 1.19209e-07, 3, -192, 20, -29.915)
